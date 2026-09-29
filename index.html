@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gmail Triage App</title>
+  <meta name="description" content="Gmail Triage App: a personal, single-user tool that sorts its owner's own Gmail inbox.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Gmail Triage App</h1>
+    <p>A personal tool that helps one person keep his own Gmail inbox under control.</p>
+  </header>
+
+  <div class="card">
+    <strong>Not a public service.</strong> This app is used by exactly one person: the owner of the Google
+    account it connects to. There are no sign-ups, no other users and no server run by this app.
+  </div>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Reads the <em>metadata</em> of recent messages in the owner's inbox with read-only Gmail access:
+      sender, recipients, subject, date, labels, read/unread status, unsubscribe headers and the short
+      preview text that Gmail provides. It does not download full message bodies or attachments.</li>
+    <li>Classifies each message (for example: newsletter, service, club; needs action; security-related;
+      how urgent) with an AI classification model.</li>
+    <li>Writes a daily summary for the owner and proposes which messages need attention, and gives advice
+      on which newsletters to unsubscribe from or filter.</li>
+  </ul>
+
+  <h2>What it does not do</h2>
+  <ul>
+    <li>It cannot send, delete, archive or change email: it only has read-only access.</li>
+    <li>It does not sell, share for advertising, or publish any email data.</li>
+  </ul>
+
+  <p>How Google user data is handled is described in the <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a>
+    <a href="terms.html">Terms of use</a>
+    <a href="https://github.com/scherrenburg-ai">Contact (GitHub)</a>
+  </footer>
+</main>
+</body>
+</html>
