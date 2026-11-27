@@ -11,7 +11,7 @@
 <main>
   <header>
     <h1>Privacy policy</h1>
-    <p>Gmail Triage App · last updated 29 September 2026</p>
+    <p>Gmail Triage App · last updated 27 November 2026</p>
   </header>
 
   <p>Gmail Triage App is a personal tool. The only Google account it accesses is the account of its owner,
@@ -29,14 +29,21 @@
     the data for advertising, does not sell it and does not build profiles with it.</p>
 
   <h2>Where the data is stored</h2>
-  <p>On the owner's own computer, in local files. The OAuth token is also stored there. The app has no server
-    and no database of its own. The owner can delete these files at any time.</p>
+  <p>In local files on the owner's own devices: a home server in the owner's house, which runs the daily
+    triage, and the owner's own computer. The OAuth token is also stored there, readable only by the owner's
+    user account. The app has no hosted server, no cloud storage and no database of its own. The source code is
+    kept in a private repository; email data, results and tokens are never stored in it. The owner can delete
+    these files at any time.</p>
 
   <h2>Services that process the data</h2>
   <ul>
     <li><strong>TypeSafe</strong> (typesafe.ai): sender, recipients, subject, date and preview text (including short
       previews of earlier messages in the same thread) are sent to TypeSafe's API, whose model classifies the
       messages. According to TypeSafe, requests and responses are not used to train its models.</li>
+    <li><strong>OpenRouter</strong> (openrouter.ai) and <strong>Microsoft</strong> (Microsoft-Decision-1, served
+      through OpenRouter, at the time of writing on Microsoft Azure): the same fields are sent to OpenRouter's
+      Decisions API, so a second model can classify the messages for comparison only. Its answers never change
+      anything on their own.</li>
     <li><strong>Anthropic</strong> (Claude): the owner's AI assistant reads the results, including sender and
       subject, to review unclear cases and to write the daily summary.</li>
   </ul>
